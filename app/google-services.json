@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "102036766964",
+    "project_id": "nahpi-application",
+    "storage_bucket": "nahpi-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102036766964:android:3d3f3e7a3e744a7e4f1ea1",
+        "android_client_info": {
+          "package_name": "com.hysonwayne.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102036766964-a9q5qgvgc08frnl372kresvmmecmoqkk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDlP9pp_d-gTe24oL0y7lmmvEMjyOIJVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102036766964-a9q5qgvgc08frnl372kresvmmecmoqkk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

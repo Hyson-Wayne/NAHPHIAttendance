@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">NAHPIAttendance</string>
+
+    //Headings
+    <string name="heading_one">Welcome to Attendance Management System</string>
+    <string name="heading_two">Get Accurate Attendance</string>
+    <string name="heading_three">Keep track on your Students</string>
+    <string name="heading_fourth">Create Instant Work Groups</string>
+
+    //Description
+    <string name="desc_one">Collect Students Attendance and create Work/Project Groups With just the click of a button</string>
+    <string name="desc_two">Get Up to Date Attendance for all your students by taking pictures of them and analysing it using the facial recognition</string>
+    <string name="desc_three">Know how many classes your students  by getting a RED alert when he or she misses up to six classes</string>
+    <string name="desc_fourth">Reduce the Level of Hate among Students by creating Work/Project groups instead of assigning Class Cords </string>
+    <string name="string_skip">Skip</string>
+    <string name="str_back">Back</string>
+    <string name="str_next">Next</string>
+    <string name="string_todo">first image</string>
+    <string name="myapp_name">ATTENDANCE SYSTEM </string>
+    <string name="bottom">Facial Recognition Attendance For NAHPI</string>
+
+    //Login
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="email_hint">Email</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="hint_login">Login</string>
+    <string name="text_account">Don\'t have an Account?</string>
+    <string name="hint_signup">SignUp</string>
+    <string name="hint_google">Google</string>
+    <string name="hint_facebook">Facebook</string>
+    <string name="hint_password">Password</string>
+    <string name="my_name">NDITAFON HYSON</string>
+    <string name="email_name">nditafonhysonn@gmail.com</string>
+    <string name="suggest_pass">******</string>
+    <string name="username">Username</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account">Already Have an Account?</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    //facebook
+
+    <string name="facebook_app_id">1234</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">56789</string>
+
+
+</resources>
