@@ -21,6 +21,7 @@ public class LoginActivity extends AppCompatActivity {
     Button btnLogin,btnGoogle;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     ProgressDialog progressDialog;
+    TextView forgotPassword;
     FirebaseAuth mAuth;
     FirebaseUser mUser;
 
@@ -38,6 +39,14 @@ public class LoginActivity extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
         btnLogin = findViewById(R.id.btnLogin);
         btnGoogle = findViewById(R.id.btnGoogle);
+        forgotPassword = findViewById(R.id.forgotPassword);
+        forgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(LoginActivity.this,"You can now Reset Your Password", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(LoginActivity.this,ForgotPassword.class));
+            }
+        });
 
         mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
