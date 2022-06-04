@@ -35,8 +35,13 @@
         android:id="@+id/app_names"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="serif-monospace"
         android:text="@string/myapp_name"
+        android:fitsSystemWindows="true"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="55sp"
@@ -64,12 +69,14 @@
         android:id="@+id/bottom_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="102dp"
         android:layout_marginBottom="16dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/bottom"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_names" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

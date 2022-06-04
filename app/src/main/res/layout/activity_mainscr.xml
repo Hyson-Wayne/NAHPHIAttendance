@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff">
@@ -96,50 +95,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/imageView5" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="165dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/blue_banner_background">
 
-                <ImageView
-                    android:id="@+id/imageView7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/banner" />
-
-                <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Up to 49% off"
-                    android:textColor="#F1CB0B"
-                    android:textSize="23sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/imageView7"
-                    app:layout_constraintHorizontal_bias="0.516"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.38" />
-
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Jan 12 - Feb 10"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="@+id/textView11"
-                    app:layout_constraintStart_toStartOf="@+id/textView11"
-                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -148,143 +104,13 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="10dp"
                     android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
 
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@drawable/blue_light_background">
 
-                            <ImageView
-                                android:id="@+id/imageViews8"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/circle_green" />
 
-                            <ImageView
-                                android:id="@+id/imageView9"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="@+id/imageView8"
-                                app:layout_constraintEnd_toEndOf="@+id/imageView8"
-                                app:layout_constraintStart_toStartOf="@+id/imageView8"
-                                app:layout_constraintTop_toTopOf="@+id/imageView8"
-                                app:srcCompat="@drawable/btn_1" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
 
-                        <TextView
-                            android:id="@+id/textView13"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Social"
-                            android:textAlignment="center"
-                            android:textColor="#34346E"
-                            android:textSize="16sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@drawable/blue_light_background">
-
-                            <ImageView
-                                android:id="@+id/imageView8"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/circle_green" />
-
-                            <ImageView
-                                android:id="@+id/imageView9"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="@+id/imageView8"
-                                app:layout_constraintEnd_toEndOf="@+id/imageView8"
-                                app:layout_constraintStart_toStartOf="@+id/imageView8"
-                                app:layout_constraintTop_toTopOf="@+id/imageView8"
-                                app:srcCompat="@drawable/btn_2" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                        <TextView
-                            android:id="@+id/textView13"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Maps"
-                            android:textAlignment="center"
-                            android:textColor="#34346E"
-                            android:textSize="16sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@drawable/blue_light_background">
-
-                            <ImageView
-                                android:id="@+id/imageView8"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/circle_green" />
-
-                            <ImageView
-                                android:id="@+id/imageView9"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="@+id/imageView8"
-                                app:layout_constraintEnd_toEndOf="@+id/imageView8"
-                                app:layout_constraintStart_toStartOf="@+id/imageView8"
-                                app:layout_constraintTop_toTopOf="@+id/imageView8"
-                                app:srcCompat="@drawable/btn_3" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                        <TextView
-                            android:id="@+id/textView13"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Inbox"
-                            android:textAlignment="center"
-                            android:textColor="#34346E"
-                            android:textSize="16sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -351,7 +177,7 @@
                             android:background="@drawable/blue_light_background">
 
                             <ImageView
-                                android:id="@+id/imageView8"
+                                android:id="@+id/collectAtIC"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 app:layout_constraintBottom_toBottomOf="parent"
@@ -361,22 +187,22 @@
                                 app:srcCompat="@drawable/circle_green" />
 
                             <ImageView
-                                android:id="@+id/imageView9"
+                                android:id="@+id/imageAtt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="@+id/imageView8"
-                                app:layout_constraintEnd_toEndOf="@+id/imageView8"
-                                app:layout_constraintStart_toStartOf="@+id/imageView8"
-                                app:layout_constraintTop_toTopOf="@+id/imageView8"
+                                app:layout_constraintBottom_toBottomOf="@+id/collectAtIC"
+                                app:layout_constraintEnd_toEndOf="@+id/collectAtIC"
+                                app:layout_constraintStart_toStartOf="@+id/collectAtIC"
+                                app:layout_constraintTop_toTopOf="@+id/collectAtIC"
                                 app:srcCompat="@drawable/btn_5" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
                         <TextView
-                            android:id="@+id/textView13"
+                            android:id="@+id/collectAt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
-                            android:text="Favorite"
+                            android:text="Collect Attendance"
                             android:textAlignment="center"
                             android:textColor="#34346E"
                             android:textSize="16sp"
@@ -396,7 +222,7 @@
                             android:background="@drawable/blue_light_background">
 
                             <ImageView
-                                android:id="@+id/imageView8"
+                                android:id="@+id/groupIC"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 app:layout_constraintBottom_toBottomOf="parent"
@@ -406,22 +232,22 @@
                                 app:srcCompat="@drawable/circle_green" />
 
                             <ImageView
-                                android:id="@+id/imageView9"
+                                android:id="@+id/groupI"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="@+id/imageView8"
-                                app:layout_constraintEnd_toEndOf="@+id/imageView8"
-                                app:layout_constraintStart_toStartOf="@+id/imageView8"
-                                app:layout_constraintTop_toTopOf="@+id/imageView8"
+                                app:layout_constraintBottom_toBottomOf="@+id/groupIC"
+                                app:layout_constraintEnd_toEndOf="@+id/groupIC"
+                                app:layout_constraintStart_toStartOf="@+id/groupIC"
+                                app:layout_constraintTop_toTopOf="@+id/groupIC"
                                 app:srcCompat="@drawable/btn_6" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
                         <TextView
-                            android:id="@+id/textView13"
+                            android:id="@+id/groups"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
-                            android:text="Logout"
+                            android:text="Create Groups"
                             android:textAlignment="center"
                             android:textColor="#34346E"
                             android:textSize="16sp"
@@ -481,14 +307,14 @@ android:backgroundTint="#3054a8"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imageView10"
+                    android:id="@+id/profileIC"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     app:srcCompat="@drawable/bottom_btn2" />
 
                 <TextView
-                    android:id="@+id/textView14"
+                    android:id="@+id/profile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Profile"
@@ -505,14 +331,14 @@ android:backgroundTint="#3054a8"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imageView10"
+                    android:id="@+id/cartIC"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     app:srcCompat="@drawable/bottom_btn5" />
 
                 <TextView
-                    android:id="@+id/textView14"
+                    android:id="@+id/cart"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Cart"
@@ -529,14 +355,14 @@ android:backgroundTint="#3054a8"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imageView10"
+                    android:id="@+id/supportIC"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     app:srcCompat="@drawable/bottom_btn3" />
 
                 <TextView
-                    android:id="@+id/textView14"
+                    android:id="@+id/support"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Support"
@@ -553,14 +379,14 @@ android:backgroundTint="#3054a8"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imageView10"
+                    android:id="@+id/settingsIC"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     app:srcCompat="@drawable/bottom_btn4" />
 
                 <TextView
-                    android:id="@+id/textView14"
+                    android:id="@+id/settings"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Settings"

@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class LoginActivity extends AppCompatActivity {
 
     EditText inputEmail, inputPassword;
-    Button btnLogin,btnGoogle,btnFacebook;
+    Button btnLogin,btnGoogle;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     ProgressDialog progressDialog;
     FirebaseAuth mAuth;
@@ -38,7 +38,6 @@ public class LoginActivity extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
         btnLogin = findViewById(R.id.btnLogin);
         btnGoogle = findViewById(R.id.btnGoogle);
-        btnFacebook = findViewById(R.id.btnFacebook);
 
         mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
@@ -57,12 +56,6 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-
-        btnFacebook.setOnClickListener(v -> {
-            Intent intent = new Intent(LoginActivity.this, FacebookSignIn.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-            startActivity(intent);
-        });
     }
 
 

@@ -16,9 +16,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Splashscreenanimation">
         <activity
-            android:name=".FacebookSignIn"
-            android:exported="false" />
-        <activity
             android:name=".GoogleSignActivity"
             android:exported="false" /> <!-- android:theme="@style/Theme.SplashScreen"> -->
         <activity
