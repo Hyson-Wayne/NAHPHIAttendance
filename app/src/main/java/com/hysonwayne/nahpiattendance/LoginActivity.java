@@ -89,7 +89,7 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this, "Login Complete", Toast.LENGTH_SHORT).show();
                 }else {
                     progressDialog.dismiss();
-                    Toast.makeText(LoginActivity.this, ""+task.getException(),Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, " Login Failed. Please enter correct details",Toast.LENGTH_SHORT).show();
                 }
             });
         }
@@ -99,5 +99,6 @@ public class LoginActivity extends AppCompatActivity {
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
+
 
 }

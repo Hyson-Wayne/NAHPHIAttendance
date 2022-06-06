@@ -10,19 +10,23 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 
 public class splash extends AppCompatActivity {
 
-    private static final int DELAY_TIME = 5000;
+    private static final int DELAY_TIME = 6000;
 
     Animation topAnim, bottomAnim;
 
     ImageView splashimg;
-    TextView appname;
+    TextView appname,profileEmail;
     LottieAnimationView lottieAnimationView;
+    FirebaseAuth mUserProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,21 +41,36 @@ public class splash extends AppCompatActivity {
         appname = findViewById(R.id.app_names);
         splashimg = findViewById(R.id.img);
         lottieAnimationView = findViewById(R.id.lottie);
+        profileEmail = findViewById(R.id.emailShow);
+        mUserProfile = FirebaseAuth.getInstance();
 
         splashimg.setAnimation(topAnim);
         appname.setAnimation(bottomAnim);
-        //splashimg.animate().translationY(-2500).setDuration(1000).setStartDelay(5000);
-       // appname.animate().translationY(2000).setDuration(1000).setStartDelay(5000);
-       // lottieAnimationView.animate().translationY(1500).setDuration(1000).setStartDelay(5000);
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+                FirebaseUser firebaseUser = mUserProfile.getCurrentUser();
 
-                startActivity(new Intent(splash.this,MainActivity.class));
 
+                if (firebaseUser != null){
+                    Toast.makeText(splash.this, "Already Logged In", Toast.LENGTH_SHORT).show();
+                    //profileEmail.setText(firebaseUser.getEmail());
+
+
+                    // starting the user activity
+                    startActivity(new Intent(splash.this, mainscreen.class));
+                }else {
+
+                    // going to login activity
+                    startActivity(new Intent(splash.this,MainActivity.class));
+
+
+                }
             }
-        },6000);
+        },DELAY_TIME);
 
     }
+    // checking if user is already logged in or not
+
 }

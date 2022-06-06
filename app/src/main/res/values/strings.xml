@@ -10,8 +10,8 @@
     //Description
     <string name="desc_one">Collect Students Attendance and create Work/Project Groups With just the click of a button</string>
     <string name="desc_two">Get Up to Date Attendance for all your students by taking pictures of them and analysing it using the facial recognition</string>
-    <string name="desc_three">Know how many classes your students  by getting a RED alert when he or she misses up to six classes</string>
-    <string name="desc_fourth">Reduce the Level of Hate among Students by creating Work/Project groups instead of assigning Class Cords </string>
+    <string name="desc_three">Know how many classes your students miss by getting a RED alert when he or she misses up to six classes</string>
+    <string name="desc_fourth">Reduce the Level of Hate among Students by creating Work/Project groups instead of letting Class Cords assign them </string>
     <string name="string_skip">Skip</string>
     <string name="str_back">Back</string>
     <string name="str_next">Next</string>
@@ -30,7 +30,6 @@
     <string name="hint_google">Google</string>
     <string name="hint_facebook">Facebook</string>
     <string name="hint_password">Password</string>
-    <string name="my_name">NDITAFON HYSON</string>
     <string name="email_name">nditafonhysonn@gmail.com</string>
     <string name="suggest_pass">******</string>
     <string name="username">Username</string>
