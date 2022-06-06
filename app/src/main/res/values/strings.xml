@@ -46,6 +46,7 @@
     <string name="welcome">WELCOME</string>
     <string name="reset_password">Reset Password</string>
     <string name="resetting_pass">Please enter your Email Address below. A link would be sent to this email address to enable you reset your password.</string>
+    <string name="logout">Logout</string>
 
 
 </resources>

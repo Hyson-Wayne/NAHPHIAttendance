@@ -7,6 +7,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
@@ -18,12 +19,14 @@ import android.widget.Toast;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 
-public class ForgotPassword extends LoginActivity {
+public class ForgotPassword extends AppCompatActivity {
 
     private Button resetPassword;
     private EditText userEmailAddress;
     private FirebaseAuth authProfile;
+    private final static String TAG = "ForgotPassword";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,7 +73,15 @@ public class ForgotPassword extends LoginActivity {
                     startActivity(intent);
                     finish();
                 }else {
-                    Toast.makeText(ForgotPassword.this,"Something went Wrong!!!", Toast.LENGTH_SHORT).show();
+                    try {
+                        throw task.getException();
+                    }catch (FirebaseAuthInvalidUserException e){
+                        userEmailAddress.setError("User does not exist. Please Register Again");
+                    }catch (Exception e){
+                        Log.e(TAG, e.getMessage());
+                        Toast.makeText(ForgotPassword.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+
                 }
             }
         });
