@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.identity.BeginSignInRequest;
@@ -82,7 +84,7 @@ public class GoogleSignActivity extends LoginActivity {
                             updateUI(user);
                         }else {
                             progressDialog.dismiss();
-                            Toast.makeText(GoogleSignActivity.this,"signInWithCredential : failure", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(GoogleSignActivity.this,"Signing In With Credential : failure", Toast.LENGTH_SHORT).show();
                             updateUI(null);
                             finish();
                         }
@@ -94,5 +96,6 @@ public class GoogleSignActivity extends LoginActivity {
         Intent intent = new Intent(GoogleSignActivity.this,mainscreen.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
+
     }
 }

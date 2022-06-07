@@ -4,7 +4,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#ffffff">
+        android:background="#ffffff"
+        tools:context=".mainscreen">
 
         <ScrollView
             android:id="@+id/scrollView3"
@@ -38,48 +39,52 @@
                         app:layout_constraintVertical_bias="0.0"
                         app:srcCompat="@drawable/top_background_blue" />
 
-                    <ImageView
-                        android:id="@+id/imageView6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/profile_img"
+                        android:layout_width="172dp"
+                        android:layout_height="164dp"
+                        android:layout_marginBottom="112dp"
+                        android:src="@drawable/ic_person"
+                        android:padding="8dp"
                         app:layout_constraintBottom_toBottomOf="@+id/imageView5"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.498"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.162"
-                        app:srcCompat="@drawable/profile" />
+                        app:shapeAppearanceOverlay="@style/circular"
+                        app:strokeColor="#264FC8"
+                        app:strokeWidth="5dp" />
+
 
                     <TextView
                         android:id="@+id/textView9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="12dp"
                         android:text="@string/welcome"
                         android:textColor="#f1cb0b"
                         android:textSize="30sp"
                         android:textStyle="bold"
-                        app:layout_constraintEnd_toEndOf="@+id/imageView6"
-                        app:layout_constraintStart_toStartOf="@+id/imageView6"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+                        app:layout_constraintEnd_toEndOf="@+id/profile_img"
+                        app:layout_constraintStart_toStartOf="@+id/profile_img"
+                        app:layout_constraintTop_toBottomOf="@+id/profile_img" />
 
                     <TextView
                         android:id="@+id/emailShow"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/adamina"
                         android:text="email"
                         android:textSize="16sp"
                         android:textStyle="bold"
                         app:layout_constraintEnd_toEndOf="@+id/textView9"
+                        app:layout_constraintHorizontal_bias="0.466"
                         app:layout_constraintStart_toStartOf="@+id/textView9"
                         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
-
                     <TextView
                         android:id="@+id/date"
-                        android:layout_width="337dp"
-                        android:layout_height="70dp"
+                        android:layout_width="320dp"
+                        android:layout_height="56dp"
                         android:background="@drawable/white_background_edt"
                         android:gravity="center"
                         android:text="date"
@@ -90,7 +95,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/imageView5"
-                        app:layout_constraintVertical_bias="0.728" />
+                        app:layout_constraintVertical_bias="0.242" />
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>

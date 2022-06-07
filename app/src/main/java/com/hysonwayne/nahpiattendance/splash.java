@@ -24,7 +24,7 @@ public class splash extends AppCompatActivity {
     Animation topAnim, bottomAnim;
 
     ImageView splashimg;
-    TextView appname,profileEmail;
+    TextView appname;
     LottieAnimationView lottieAnimationView;
     FirebaseAuth mUserProfile;
 
@@ -41,7 +41,6 @@ public class splash extends AppCompatActivity {
         appname = findViewById(R.id.app_names);
         splashimg = findViewById(R.id.img);
         lottieAnimationView = findViewById(R.id.lottie);
-        profileEmail = findViewById(R.id.emailShow);
         mUserProfile = FirebaseAuth.getInstance();
 
         splashimg.setAnimation(topAnim);
@@ -55,7 +54,6 @@ public class splash extends AppCompatActivity {
 
                 if (firebaseUser != null){
                     Toast.makeText(splash.this, "Already Logged In", Toast.LENGTH_SHORT).show();
-                    //profileEmail.setText(firebaseUser.getEmail());
 
 
                     // starting the user activity
