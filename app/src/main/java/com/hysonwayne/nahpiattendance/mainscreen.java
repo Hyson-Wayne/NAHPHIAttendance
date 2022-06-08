@@ -52,6 +52,7 @@ public class mainscreen extends AppCompatActivity {
 
         }
 
+
         //setting automatic time
         Calendar calender = Calendar.getInstance();
         String currentDate = DateFormat.getDateInstance(DateFormat.FULL).format(calender.getTime());
@@ -68,9 +69,6 @@ public class mainscreen extends AppCompatActivity {
 
             }
         });
-
-
-
 
     }
 
