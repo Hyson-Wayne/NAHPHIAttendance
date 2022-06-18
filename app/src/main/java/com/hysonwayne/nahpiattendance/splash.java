@@ -53,7 +53,7 @@ public class splash extends AppCompatActivity {
 
 
                 if (firebaseUser != null){
-                    Toast.makeText(splash.this, "Already Logged In", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(splash.this, "Welcome Back ", Toast.LENGTH_SHORT).show();
 
 
                     // starting the user activity
@@ -61,7 +61,7 @@ public class splash extends AppCompatActivity {
                 }else {
 
                     // going to login activity
-                    startActivity(new Intent(splash.this,MainActivity.class));
+                    startActivity(new Intent(splash.this, MainActivity.class));
 
 
                 }

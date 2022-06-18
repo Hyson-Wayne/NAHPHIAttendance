@@ -14,6 +14,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "102036766964-afebm6shauu5n96geev64sbslqea7pkv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hysonwayne.myapplication",
+            "certificate_hash": "281844a69efe60ec41be4b3b07ccb5e181e90eca"
+          }
+        },
+        {
+          "client_id": "102036766964-p99rjn64trk1jas3lsdb4d46omqen6qn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hysonwayne.myapplication",
+            "certificate_hash": "23eab78fe7735a3b3bec2adf7f3be44f1e2e4ca6"
+          }
+        },
+        {
           "client_id": "102036766964-a9q5qgvgc08frnl372kresvmmecmoqkk.apps.googleusercontent.com",
           "client_type": 3
         }

@@ -2,15 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hysonwayne.nahpiattendance">
 
+    <uses-permission android:name="android.permission.CAMERA" />
 
-
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-feature android:name="android.hardware.camera" android:required="false"/>
-    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
-    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
-    <uses-feature android:name="android.hardware.camera.front.autofocus" android:required="false"/>
-
-    <!-- permission -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front.autofocus"
+        android:required="false" /> <!-- permission -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -24,6 +29,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splashscreenanimation">
+        <activity
+            android:name=".NameGroups"
+            android:exported="false" />
+        <activity
+            android:name=".AttendanceOptions"
+            android:exported="false" />
+        <activity
+            android:name=".UsersGroup"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterStudents"
+            android:exported="false" />
+        <activity
+            android:name=".FaceDetection"
+            android:exported="false"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".ForgotPassword"
             android:exported="false" />

@@ -34,7 +34,7 @@
     <string name="suggest_pass">******</string>
     <string name="username">Username</string>
     <string name="register">Register</string>
-    <string name="already_have_an_account">Already Have an Account?</string>
+    <string name="already_have_an_account">Already Have an Account ?</string>
     <string name="confirm_password">Confirm Password</string>
 
     //facebook
@@ -46,6 +46,11 @@
     <string name="reset_password">Reset Password</string>
     <string name="resetting_pass">Please enter your Email Address below. A link would be sent to this email address to enable you reset your password.</string>
     <string name="logout">Logout</string>
+    <string name="full_name">Full Name</string>
+    <string name="Registration">Registration Number</string>
+    <string name="computer_engineering">Computer Engineering</string>
+    <string name="student_registration">STUDENT REGISTRATION</string>
+    <string name="todo">TODO</string>
 
 
 </resources>

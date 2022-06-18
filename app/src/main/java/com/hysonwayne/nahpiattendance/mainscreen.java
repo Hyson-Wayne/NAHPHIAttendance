@@ -21,9 +21,10 @@ import java.util.Calendar;
 
 public class mainscreen extends AppCompatActivity {
 
-    ImageView logOut, userProfile;
+    ImageView logOut, userProfile,attendanceButton,groupButton;
     TextView userEmail;
     FirebaseAuth mAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +34,15 @@ public class mainscreen extends AppCompatActivity {
         FirebaseAuth mAuth = FirebaseAuth.getInstance();
         userProfile = findViewById(R.id.profile_img);
         userEmail = findViewById(R.id.emailShow);
+        //groupButton = findViewById(R.id.groupI);
+        groupButton = findViewById(R.id.groupI);
 
+
+        attendanceButton = findViewById(R.id.imageAtt);
+
+        attendanceButton.setOnClickListener(v -> startActivity(new Intent(mainscreen.this,AttendanceOptions.class)));
+
+        groupButton.setOnClickListener(v -> startActivity(new Intent(mainscreen.this,NameGroups.class)));
 
 
         // getting my info
