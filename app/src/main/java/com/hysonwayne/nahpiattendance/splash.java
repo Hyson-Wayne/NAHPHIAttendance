@@ -54,14 +54,17 @@ public class splash extends AppCompatActivity {
 
                 if (firebaseUser != null){
                     Toast.makeText(splash.this, "Welcome Back ", Toast.LENGTH_SHORT).show();
+                    finish();
 
 
                     // starting the user activity
                     startActivity(new Intent(splash.this, mainscreen.class));
+                    finish();
                 }else {
 
                     // going to login activity
                     startActivity(new Intent(splash.this, MainActivity.class));
+                    finish();
 
 
                 }

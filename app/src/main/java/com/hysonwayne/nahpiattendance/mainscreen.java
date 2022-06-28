@@ -40,7 +40,7 @@ public class mainscreen extends AppCompatActivity {
 
         attendanceButton = findViewById(R.id.imageAtt);
 
-        attendanceButton.setOnClickListener(v -> startActivity(new Intent(mainscreen.this,AttendanceOptions.class)));
+        attendanceButton.setOnClickListener(v -> startActivity(new Intent(mainscreen.this,FingerPrint.class)));
 
         groupButton.setOnClickListener(v -> startActivity(new Intent(mainscreen.this,NameGroups.class)));
 

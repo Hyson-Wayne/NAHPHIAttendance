@@ -34,6 +34,7 @@ public class UsersGroup extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         list = new ArrayList<>();
+
         myAdapter = new MyAdapter(this,list);
         recyclerView.setAdapter(myAdapter);
 

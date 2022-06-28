@@ -54,8 +54,10 @@
         <entry key="..\:/Users/ndita/AndroidStudioProjects/NAHPIAttendance/app/src/main/res/layout/activity_attendance_options.xml" value="0.24259259259259258" />
         <entry key="..\:/Users/ndita/AndroidStudioProjects/NAHPIAttendance/app/src/main/res/layout/activity_face_detection.xml" value="0.22393162393162394" />
         <entry key="..\:/Users/ndita/AndroidStudioProjects/NAHPIAttendance/app/src/main/res/layout/activity_facebook_sign_in.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/ndita/AndroidStudioProjects/NAHPIAttendance/app/src/main/res/layout/activity_finger_print.xml" value="0.22" />
         <entry key="..\:/Users/ndita/AndroidStudioProjects/NAHPIAttendance/app/src/main/res/layout/activity_forgot_password.xml" value="0.33" />
         <entry key="..\:/Users/ndita/AndroidStudioProjects/NAHPIAttendance/app/src/main/res/layout/activity_google_signin.xml" value="0.25" />
+        <entry key="..\:/Users/ndita/AndroidStudioProjects/NAHPIAttendance/app/src/main/res/layout/activity_group_homescreen.xml" value="0.25" />
         <entry key="..\:/Users/ndita/AndroidStudioProjects/NAHPIAttendance/app/src/main/res/layout/activity_group_name.xml" value="0.22393162393162394" />
         <entry key="..\:/Users/ndita/AndroidStudioProjects/NAHPIAttendance/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/ndita/AndroidStudioProjects/NAHPIAttendance/app/src/main/res/layout/activity_main.xml" value="0.25" />
@@ -67,7 +69,7 @@
         <entry key="..\:/Users/ndita/AndroidStudioProjects/NAHPIAttendance/app/src/main/res/layout/activity_splashscreen2.xml" value="0.25" />
         <entry key="..\:/Users/ndita/AndroidStudioProjects/NAHPIAttendance/app/src/main/res/layout/activity_students_register.xml" value="0.24259259259259258" />
         <entry key="..\:/Users/ndita/AndroidStudioProjects/NAHPIAttendance/app/src/main/res/layout/activity_support.xml" value="0.24259259259259258" />
-        <entry key="..\:/Users/ndita/AndroidStudioProjects/NAHPIAttendance/app/src/main/res/layout/activity_users_group.xml" value="0.22393162393162394" />
+        <entry key="..\:/Users/ndita/AndroidStudioProjects/NAHPIAttendance/app/src/main/res/layout/activity_users_group.xml" value="0.25" />
         <entry key="..\:/Users/ndita/AndroidStudioProjects/NAHPIAttendance/app/src/main/res/layout/attendance_options.xml" value="0.2123931623931624" />
         <entry key="..\:/Users/ndita/AndroidStudioProjects/NAHPIAttendance/app/src/main/res/layout/groups_main.xml" value="0.2123931623931624" />
         <entry key="..\:/Users/ndita/AndroidStudioProjects/NAHPIAttendance/app/src/main/res/layout/ic_launcher_foreground.xml" value="0.25" />

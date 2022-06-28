@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/background"
+android:visibility="gone"
+android:id="@+id/fingerprint"
+tools:context=".FingerPrint">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginTop="164dp"
+        android:text="Attendance Method"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/liveCamera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/liveCamera"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="244dp"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/teal_200"
+        android:drawableLeft="@drawable/live_camera"
+        android:text="Live Attendance"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/existing_Video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/existing_Video"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="364dp"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/teal_200"
+        android:drawableLeft="@drawable/existing_vid"
+        android:text="Existing Video"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/existing_Photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <Button
+        android:id="@+id/existing_Photo"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="516dp"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/teal_200"
+        android:drawableLeft="@drawable/existing_photo"
+        android:text="Existing Photo"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/returnB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="628dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/teal_200"
+        android:text="Return"
+        android:textAlignment="textStart"
+        android:textColor="#ffffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

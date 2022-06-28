@@ -21,6 +21,7 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
 
     <application
         android:allowBackup="true"
@@ -30,10 +31,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Splashscreenanimation">
         <activity
-            android:name=".NameGroups"
+            android:name=".GroupHomescreen"
             android:exported="false" />
         <activity
-            android:name=".AttendanceOptions"
+            android:name=".FingerPrint"
+            android:exported="false" />
+        <activity
+            android:name=".NameGroups"
             android:exported="false" />
         <activity
             android:name=".UsersGroup"

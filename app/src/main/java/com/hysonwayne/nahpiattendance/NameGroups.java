@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 public class NameGroups extends AppCompatActivity {
@@ -20,11 +19,11 @@ public class NameGroups extends AppCompatActivity {
 
         addNewStudent = findViewById(R.id.addNew);
         createGroups = findViewById(R.id.createGroups);
-        goBack = findViewById(R.id.goBack);
+        goBack = findViewById(R.id.goBacker);
 
         /////////////
         addNewStudent.setOnClickListener(v -> startActivity(new Intent(NameGroups.this,RegisterStudents.class)));
-        createGroups.setOnClickListener(v -> startActivity(new Intent(NameGroups.this,UsersGroup.class)));
+        createGroups.setOnClickListener(v -> startActivity(new Intent(NameGroups.this,GroupHomescreen.class)));
         goBack.setOnClickListener(v -> startActivity(new Intent(NameGroups.this,mainscreen.class)));
     }
 }
