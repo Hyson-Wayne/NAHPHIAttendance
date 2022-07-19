@@ -39,12 +39,28 @@ tools:context=".NameGroups">
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="428dp"
+        android:layout_marginTop="412dp"
+        android:layout_marginBottom="36dp"
         android:backgroundTint="@color/teal_200"
         android:text="Create Group"
         android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/viewAllStudents"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/viewAllStudents"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="508dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="View Students"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/goBacker"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -58,17 +74,16 @@ tools:context=".NameGroups">
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/createGroups"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.609" />
+        app:layout_constraintVertical_bias="0.603" />
 
     <Button
         android:id="@+id/goBacker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="580dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="24dp"
         android:backgroundTint="@color/teal_200"
         android:text="Back"
         android:textAlignment="center"
@@ -77,9 +92,9 @@ tools:context=".NameGroups">
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

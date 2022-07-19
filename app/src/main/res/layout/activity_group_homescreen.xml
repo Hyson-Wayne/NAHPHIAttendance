@@ -117,21 +117,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:onClick="checkButton"
                 android:text="TWO" />
 
             <RadioButton
                 android:id="@+id/radio_two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="checkButton"
+
                 android:text="THREE" />
 
             <RadioButton
                 android:id="@+id/radio_three"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="checkButton"
+
                 android:text="FOUR" />
 
         </RadioGroup>

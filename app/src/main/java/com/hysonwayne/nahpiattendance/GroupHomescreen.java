@@ -1,7 +1,5 @@
 package com.hysonwayne.nahpiattendance;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,42 +7,48 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 
 public class GroupHomescreen extends AppCompatActivity {
 
     RadioGroup radioGroup;
-    Button goBack;
-    RadioButton radioButton;
-    TextView textView;
+    Button goBack, createGroups;
+    RadioButton radioButton, radioButton2, radioButton3, radioButton4;
+    TextView totStudents;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_group_homescreen);
+
+
+        radioButton2 = findViewById(R.id.radio_one);
+        radioButton3 = findViewById(R.id.radio_two);
+        radioButton4 = findViewById(R.id.radio_three);
+        createGroups = findViewById(R.id.createGroupss);
         goBack = findViewById(R.id.goBack);
-        goBack.setOnClickListener(v -> startActivity(new Intent(GroupHomescreen.this,NameGroups.class)));
+        goBack.setOnClickListener(v -> startActivity(new Intent(GroupHomescreen.this, NameGroups.class)));
 
-        radioGroup = findViewById(R.id.radioGroup);
-       // textView = findViewById(R.id.groupOf);
 
-        Button create = findViewById(R.id.createGroupss);
-        create.setOnClickListener(v -> {
-            int radioId = radioGroup.getCheckedRadioButtonId();
+        createGroups.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-            radioButton = findViewById(radioId);
-
-           // textView.setText("Groups of: " + radioButton.getText());
+//                if (radioButton2.isChecked()) {
+//                    Intent intent = new Intent(GroupHomescreen.this, Groups2.class);
+//                    startActivity(intent);
+//                } else if (radioButton3.isChecked()) {
+//                    Intent intent = new Intent(GroupHomescreen.this, Groups3.class);
+//                    startActivity(intent);
+//                } else {
+//                    Intent intent = new Intent(GroupHomescreen.this, Groups4.class);
+//                    startActivity(intent);
+//                }
+            }
         });
-    }
 
-    public void checkButton(View v) {
-        int radioId = radioGroup.getCheckedRadioButtonId();
 
-        radioButton = findViewById(radioId);
-
-        Toast.makeText(this, "Creating Groups of "+radioButton.getText(),
-                Toast.LENGTH_SHORT).show();
     }
 }
-//////////////////////////////////

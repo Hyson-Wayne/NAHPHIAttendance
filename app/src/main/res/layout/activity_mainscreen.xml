@@ -306,7 +306,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/profileIC"
+                    android:id="@+id/statusIC"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
@@ -353,7 +353,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/supportIC"
+                    android:id="@+id/supportMe"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"

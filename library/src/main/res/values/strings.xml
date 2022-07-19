@@ -1,0 +1,10 @@
+<resources>
+    <string name="about_page_description" translatable="false">Thanks for choosing to use Attendance System for NAHPI. This Application
+                                                                was created by Nditafon Hyson Nuigho of NAHPI, Computer Engineering Department
+                                                                Got any Issues ? contact me</string>
+
+    <string name="about_contact_us">Send an Email</string>
+    <string name="about_github">My GitHub</string>
+    <string name="about_website">Privacy Policy</string>
+
+</resources>

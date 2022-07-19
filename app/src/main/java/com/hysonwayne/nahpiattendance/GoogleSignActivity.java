@@ -1,17 +1,12 @@
 package com.hysonwayne.nahpiattendance;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.auth.api.identity.BeginSignInRequest;
+import androidx.annotation.NonNull;
+
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -85,8 +80,9 @@ public class GoogleSignActivity extends LoginActivity {
                         }else {
                             progressDialog.dismiss();
                             Toast.makeText(GoogleSignActivity.this,"Signing In With Credential : failure", Toast.LENGTH_SHORT).show();
-                            updateUI(null);
                             finish();
+                            updateUI(null);
+
                         }
                     }
                 });

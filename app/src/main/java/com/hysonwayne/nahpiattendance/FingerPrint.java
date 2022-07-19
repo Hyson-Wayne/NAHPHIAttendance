@@ -1,18 +1,19 @@
 package com.hysonwayne.nahpiattendance;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.biometric.BiometricManager;
-import androidx.biometric.BiometricPrompt;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.core.content.ContextCompat;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ScrollView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.biometric.BiometricManager;
+import androidx.biometric.BiometricPrompt;
+import androidx.core.content.ContextCompat;
+
+import com.hysonwayne.nahpiattendance.Detection.DetectorActivity;
 
 import java.util.concurrent.Executor;
 
@@ -21,16 +22,18 @@ public class FingerPrint extends AppCompatActivity {
     BiometricPrompt biometricPrompt;
     BiometricPrompt.PromptInfo promptInfo;
     ScrollView mFingerLayout;
-    Button returnB;
+    Button returnB, liveAttendance;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_finger_print);
         mFingerLayout = findViewById(R.id.fingerprint);
+        liveAttendance = findViewById(R.id.liveCamera);
         returnB = findViewById(R.id.returnB);
 
         returnB.setOnClickListener(v -> startActivity(new Intent(FingerPrint.this, mainscreen.class)));
+        liveAttendance.setOnClickListener(v -> startActivity(new Intent(FingerPrint.this, DetectorActivity.class)));
 
 
         //checking if a phone has Biometrics or not
@@ -71,7 +74,7 @@ public class FingerPrint extends AppCompatActivity {
             }
         });
         promptInfo = new BiometricPrompt.PromptInfo.Builder().setTitle("NAHPI Attendance")
-                .setDescription("Use FingerPrint To Access Attendance").setDeviceCredentialAllowed(true)
+                .setDescription("Please confirm your identity to continue").setDeviceCredentialAllowed(true)
                 .build();
         biometricPrompt.authenticate(promptInfo);
 

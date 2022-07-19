@@ -1,27 +1,25 @@
 package com.hysonwayne.nahpiattendance;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
+import com.hysonwayne.nahpiattendance.MyGroup.TeamRandomizer;
 
 import java.text.DateFormat;
 import java.util.Calendar;
 
 public class mainscreen extends AppCompatActivity {
 
-    ImageView logOut, userProfile,attendanceButton,groupButton;
+    ImageView logOut, userProfile,attendanceButton,groupButton, support,status;
     TextView userEmail;
     FirebaseAuth mAuth;
 
@@ -34,15 +32,20 @@ public class mainscreen extends AppCompatActivity {
         FirebaseAuth mAuth = FirebaseAuth.getInstance();
         userProfile = findViewById(R.id.profile_img);
         userEmail = findViewById(R.id.emailShow);
-        //groupButton = findViewById(R.id.groupI);
+        support = findViewById(R.id.supportMe);
+        status = findViewById(R.id.statusIC);
         groupButton = findViewById(R.id.groupI);
 
 
         attendanceButton = findViewById(R.id.imageAtt);
 
+
+        status.setOnClickListener(v -> startActivity(new Intent(mainscreen.this,Status.class)));
+        support.setOnClickListener(v -> startActivity(new Intent(mainscreen.this,AboutUs.class)));
+
         attendanceButton.setOnClickListener(v -> startActivity(new Intent(mainscreen.this,FingerPrint.class)));
 
-        groupButton.setOnClickListener(v -> startActivity(new Intent(mainscreen.this,NameGroups.class)));
+        groupButton.setOnClickListener(v -> startActivity(new Intent(mainscreen.this, TeamRandomizer.class)));
 
 
         // getting my info
@@ -61,7 +64,6 @@ public class mainscreen extends AppCompatActivity {
 
         }
 
-
         //setting automatic time
         Calendar calender = Calendar.getInstance();
         String currentDate = DateFormat.getDateInstance(DateFormat.FULL).format(calender.getTime());
@@ -70,13 +72,8 @@ public class mainscreen extends AppCompatActivity {
 
 
         //logging out
-        logOut.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mAuth.signOut();
-                signOutUser();
-
-            }
+        logOut.setOnClickListener(v -> { mAuth.signOut();
+            signOutUser();
         });
 
     }

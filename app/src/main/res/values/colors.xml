@@ -16,6 +16,10 @@
     <color name="inactive">#C4C4C4</color>
     <color name="active">#50C2C9</color>
 
+    ///group
+    <color name="rtg_accent_color">#33B5E5</color>
+    <color name="rtg_accent_color_dark">#2890b7</color>
+
     //status bar color
     <color name="statusbar">#50C2C9</color>
     <color name="colorPrimary">#FFFFFF</color>
@@ -34,6 +38,12 @@
     <color name="colorBlack">#000000</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorRed">#C11515</color>
+
+    <color name="tfe_color_primary">#ffa800</color>
+    <color name="tfe_color_primary_dark">#ff6f00</color>
+    <color name="tfe_color_accent">#425066</color>
+
+    <color name="tfe_semi_transparent">#66000000</color>
 
 
 </resources>

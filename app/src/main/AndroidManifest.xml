@@ -22,6 +22,7 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -30,6 +31,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splashscreenanimation">
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+
+        <activity
+            android:name=".Status"
+            android:exported="false" />
         <activity
             android:name=".GroupHomescreen"
             android:exported="false" />
@@ -46,15 +55,45 @@
             android:name=".RegisterStudents"
             android:exported="false" />
         <activity
-            android:name=".FaceDetection"
-            android:exported="false"
-            android:screenOrientation="landscape" />
-        <activity
             android:name=".ForgotPassword"
             android:exported="false" />
         <activity
+            android:name=".Detection.DetectorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUs"
+            android:exported="false" />
+
+        <activity
+            android:name=".MyGroup.TeamRandomizer"
+            android:exported="false" />
+        <activity
+            android:name=".MyGroup.Randomize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MyGroup.DeleteName"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MyGroup.LoadPreset"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MyGroup.DeletePreset"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MyGroup.ViewPreset"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+
+        <activity
             android:name=".GoogleSignActivity"
-            android:exported="false" /> <!-- android:theme="@style/Theme.SplashScreen"> -->
+            android:exported="false" />
         <activity
             android:name=".splash"
             android:exported="true"
